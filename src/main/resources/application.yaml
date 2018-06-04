@@ -1,0 +1,19 @@
+moose:
+  properties:
+    manager-username: 'MOOSE.INIT.MANAGER.USERNAME'
+    manager-password: 'MOOSE.INIT.MANAGER.PASSWORD'
+  domain-mapping:
+    prefix: 'Moose'
+    suffix: 'Controller'
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: 'jdbc:mysql://localhost/melons?characterEncoding=UTF-8&autoReconnect=true'
+    username: 'dev'
+    password: 'devpass'
+  jpa:
+    hibernate:
+      ddl-auto: update
+    open-in-view: true
+    show-sql: false
